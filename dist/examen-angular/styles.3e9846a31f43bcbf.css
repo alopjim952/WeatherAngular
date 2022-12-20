@@ -1,0 +1,1 @@
+.night{background-image:linear-gradient(to right,rgb(123,123,250),rgb(83,83,194))}.day{background-image:linear-gradient(to right,rgb(243,192,24),rgb(137,141,7))}.results{transition:.5s}.results:hover{transform:scale(1.1);cursor:pointer}.details{overflow-y:scroll;height:84vh}
