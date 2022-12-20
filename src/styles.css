@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+.night{
+    background-image: linear-gradient(to right, rgb(123, 123, 250), rgb(83, 83, 194));
+}
+
+.day{
+    background-image: linear-gradient(to right, rgb(243, 192, 24), rgb(137, 141, 7));
+}
+
+.results{
+  transition: 0.5s;
+}
+
+.results:hover{
+  transform:scale(1.1);
+  cursor: pointer;
+}
+
+.details {
+  overflow-y: scroll;
+  height: 84vh;
+}

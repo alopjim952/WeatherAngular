@@ -1,0 +1,57 @@
+<div class="container details">
+  <h2>{{ day1[0].dt_txt | date : "dd/MM" }}</h2>
+  <table class="table table-striped bg-light bg-opacity-25 text-center mt-2">
+    <tr *ngFor="let time1 of day1">
+      <td>{{ time1.dt_txt | date:'hh a' }}</td>
+      <td><img src="http://openweathermap.org/img/wn/{{ time1.weather[0].icon }}@2x.png" alt=""> {{(time1.rain)? time1.rain['3h'] + ' ml/m²':'0 ml/m²'}}</td>
+      <td class="fs-3">{{ celcius(time1.main.temp) }}º</td>
+      <td>{{ time1.weather[0].description }}<br class="bg-opacity-75">Sensación T. {{ celcius(time1.main.feels_like) }}º</td>
+      <td>Nubes {{ time1.clouds.all }}%</td>
+      <td><img width="50px" src="../../../../assets/manga-de-viento.png" alt="">{{ time1.wind.deg }}º<br>{{ time1.wind.speed }} km/h</td>
+    </tr>
+  </table>
+  <h2>{{ day2[0].dt_txt | date : "dd/MM" }}</h2>
+  <table class="table table-striped bg-light bg-opacity-25 text-center mt-2">
+    <tr *ngFor="let time1 of day2">
+      <td>{{ time1.dt_txt | date:'hh a' }}</td>
+      <td><img src="http://openweathermap.org/img/wn/{{ time1.weather[0].icon }}@2x.png" alt=""> {{(time1.rain)? time1.rain['3h'] + ' ml/m²':'0 ml/m²'}}</td>
+      <td class="fs-3">{{ celcius(time1.main.temp) }}º</td>
+      <td>{{ time1.weather[0].description }}<br class="bg-opacity-75">Sensación T. {{ celcius(time1.main.feels_like) }}º</td>
+      <td>Nubes {{ time1.clouds.all }}%</td>
+      <td><img width="50px" src="../../../../assets/manga-de-viento.png" alt="">{{ time1.wind.deg }}º<br>{{ time1.wind.speed }} km/h</td>
+    </tr>
+  </table>
+  <h2>{{ day3[0].dt_txt | date : "dd/MM" }}</h2>
+  <table class="table table-striped bg-light bg-opacity-25 text-center mt-2">
+    <tr *ngFor="let time1 of day3">
+      <td>{{ time1.dt_txt | date:'hh a' }}</td>
+      <td><img src="http://openweathermap.org/img/wn/{{ time1.weather[0].icon }}@2x.png" alt=""> {{(time1.rain)? time1.rain['3h'] + ' ml/m²':'0 ml/m²'}}</td>
+      <td class="fs-3">{{ celcius(time1.main.temp) }}º</td>
+      <td>{{ time1.weather[0].description }}<br class="bg-opacity-75">Sensación T. {{ celcius(time1.main.feels_like) }}º</td>
+      <td>Nubes {{ time1.clouds.all }}%</td>
+      <td><img width="50px" src="../../../../assets/manga-de-viento.png" alt="">{{ time1.wind.deg }}º<br>{{ time1.wind.speed }} km/h</td>
+    </tr>
+  </table>
+  <h2>{{ day4[0].dt_txt | date : "dd/MM" }}</h2>
+  <table class="table table-striped bg-light bg-opacity-25 text-center mt-2">
+    <tr *ngFor="let time1 of day4">
+      <td>{{ time1.dt_txt | date:'hh a' }}</td>
+      <td><img src="http://openweathermap.org/img/wn/{{ time1.weather[0].icon }}@2x.png" alt=""> {{(time1.rain)? time1.rain['3h'] + ' ml/m²':'0 ml/m²'}}</td>
+      <td class="fs-3">{{ celcius(time1.main.temp) }}º</td>
+      <td>{{ time1.weather[0].description }}<br class="bg-opacity-75">Sensación T. {{ celcius(time1.main.feels_like) }}º</td>
+      <td>Nubes {{ time1.clouds.all }}%</td>
+      <td><img width="50px" src="../../../../assets/manga-de-viento.png" alt="">{{ time1.wind.deg }}º<br>{{ time1.wind.speed }} km/h</td>
+    </tr>
+  </table>
+  <h2>{{ day5[0].dt_txt | date : "dd/MM" }}</h2>
+  <table class="table table-striped bg-light bg-opacity-25 text-center mt-2">
+    <tr *ngFor="let time1 of day5">
+      <td>{{ time1.dt_txt | date:'hh a' }}</td>
+      <td><img src="http://openweathermap.org/img/wn/{{ time1.weather[0].icon }}@2x.png" alt=""> {{(time1.rain)? time1.rain['3h'] + ' ml/m²':'0 ml/m²'}}</td>
+      <td class="fs-3">{{ celcius(time1.main.temp) }}º</td>
+      <td>{{ time1.weather[0].description }}<br class="bg-opacity-75">Sensación T. {{ celcius(time1.main.feels_like) }}º</td>
+      <td>Nubes {{ time1.clouds.all }}%</td>
+      <td><img width="50px" src="../../../../assets/manga-de-viento.png" alt="">{{ time1.wind.deg }}º<br>{{ time1.wind.speed }} km/h</td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,7 @@
+<div class="sidebar bg-dark d-flex flex-column p-4" style="height: 60vh;">
+    <h4 class="text-light">HISTORIAL</h4>
+    <hr class="text-light">
+    <div class="text-light d-flex jsutify-content-center align-items-center flex-column">
+        <button (click)="searchSite(bqd.value)" [value]='site' #bqd type="button" class="btn btn-light w-100 mb-2" *ngFor="let site of listSites">{{ site }}</button>
+    </div>
+</div>
